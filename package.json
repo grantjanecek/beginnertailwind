@@ -1,0 +1,30 @@
+{
+  "name": "beginnertailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grantjanecek/beginnertailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grantjanecek/beginnertailwind/issues"
+  },
+  "homepage": "https://github.com/grantjanecek/beginnertailwind#readme",
+  "dependencies": {
+    "tailwindcss": "^1.9.6"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.0.0",
+    "parcel-bundler": "^1.3.1",
+    "postcss-modules": "^4.0.0"
+  }
+}
