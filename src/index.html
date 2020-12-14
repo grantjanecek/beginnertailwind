@@ -6,20 +6,24 @@
     <title>Beginner Tailwind</title>
 </head>
 <body>
+
     <!-- header/navigation -->
     <div class="bg-gradient-to-br from-white to-gray-300">
+
         <!-- left circle -->
         <div class="absolute top-0 left-0 transform translate-x-4 translate-y-4">
             <div class="absolute bg-gradient-to-br from-teal-100 to-teal-200 w-64 h-64 rounded-full opacity-50"></div>
             <div class="absolute ml-10 mt-8 bg-gradient-to-br from-purple-100 to-purple-200 w-64 h-64 rounded-full opacity-50"></div>
             <div class="absolute ml-24 bg-gradient-to-br from-red-100 to-red-200 w-64 h-64 rounded-full opacity-50"></div>
         </div>
+
         <!-- right cirlce -->
         <div class="hidden lg:block absolute top-0 right-0 mr-48 transform -translate-x-64 translate-y-64">
             <div class="absolute bg-gradient-to-br from-teal-100 to-teal-200 w-64 h-64 rounded-full opacity-50"></div>
             <div class="absolute ml-10 mt-8 bg-gradient-to-br from-purple-100 to-purple-200 w-64 h-64 rounded-full opacity-50"></div>
             <div class="absolute ml-24 bg-gradient-to-br from-red-100 to-red-200 w-64 h-64 rounded-full opacity-50"></div>
         </div>
+
         <!-- header -->
         <div class="relative text-gray-600">
             <!-- left header  -->
@@ -42,6 +46,10 @@
 
         <!-- hero -->
         <div class="relative">
+
+            <!-- purple box to help with the transition -->
+            <div class="absolute bottom-0 h-64 inset-x-0 bg-purple-700"></div>
+
             <div class="container mx-auto px-6 lg:px-0 text-center py-24">
                 <!-- Header -->
                 <h1 class="mb-4 text-5xl lg:text-6xl font-extrabold tracking-wider">
@@ -59,7 +67,7 @@
                     <img src="https://i.imgur.com/wysbBMS.png" alt="Teaser Image" class="rounded-lg shadow-2xl border-4 border-purple-400"/>
 
                     <!-- teaser info box -->
-                    <div class="lg:absolute top-0 right-0 lg:transform lg:translate-x-4 lg:-translate-y-4 bg-yellow-100 text-left py-4 px-8 mt-4 lg:mt-0 leading-9rounded shadow-lg text-yellow-800 border-t-4 border-yellow-500">
+                    <div class="lg:absolute top-0 right-0 lg:transform lg:translate-x-4 lg:-translate-y-4 bg-yellow-100 text-left py-4 px-8 mt-4 lg:mt-0 leading-9 rounded shadow-lg text-yellow-800 border-t-4 border-yellow-500">
                         <p><strong class="font-bold">We'll create BeginnerTailwind.com</strong><span class="opacity-50"> (it's the site you're on now)</span></p>
 
                         <p>We'll do it all without a single line of custom CSS!</p>
@@ -68,11 +76,230 @@
             </div>
         </div>
     </div>
+
     <!-- overview -->
+    <div class="relative bg-purple-700 lg:pt-12 pb-24">
+
+        <!-- transition box -->
+        <div class="absolute bottom-0 inset-x-0 h-64 bg-gray-300"></div>
+
+        <div class="relative container mx-auto px-6 lg:px-0">
+            <h2 class="mb-10 text-4xl lg:text-6xl font-bold text-purple-100">Writing CSS is tough stuff!</h2>
+            <div class="lg:flex lg:space-x-16 space-y-8 lg:space-y-0">
+                <!-- left column -->
+                <div class="lg:w-2/3 bg-white p-12 lg:p-16 rounded shadow-2xl text-gray-800 text-lg space-y-8 leading-relaxed">
+                    <p>Tailwind makes writing CSS easier and lets us customize our designs faster than any other CSS framework. If you want a CSS framework that has pre-built components, then Tailwind may not be for you. If you want a CSS framework that lets you design quickly and customize your site, then <strong class="text-teal-500 font-bold">Tailwind is gonna be a lot of fun</strong>.</p>
+
+                    <p>After using Bulma to build <a href="#" class="text-blue-500 hover:underline">Scotch.io</a>, my CSS files became littered with my own <code class="inline-block bg-gray-200 rounded px-1 text-xs text-red-700 font-mono">!important</code> classes to override the framework's styles. Tailwind doesn't have the <code class="inline-block bg-gray-200 rounded px-1 text-xs text-red-700 font-mono">!important</code>  problem since all our elements are designed on the fly. </p>
+
+                    <p><strong class="font-bold">Important Note:</strong> Tailwind lets us design quickly, but this doesn't mean that you don't need CSS knowledge however. To use Tailwind, you need to have a good understanding of CSS properties. In this course, <strong class="font-bold">we will learn Tailwind and we'll also learn CSS concepts</strong> to create good looking designs. <strong class="font-bold">Tailwind is the ultimate CSS shorthand</strong>, but we still need to learn the CSS, which we'll do in this course. </p>
+
+                    <p class="text-3xl italic relative"><span class="absolute top-0 left-0 transform -translate-x-8 -translate-y-6 text-purple-600 opacity-50 text-6xl scale scale-150">"</span>This isn't just a Tailwind course. This is also a "learn how to design with CSS" course.</p>
+
+                    <p>The hardest things about learning Tailwind is memorizing the classes and also knowing which classes go well together. We'll be writing a lot of Tailwind in this course so that the repetition will help us commit Tailwind classes to memory.</p>
+                </div>
+
+                <!-- right column -->
+                <div class="flex-grow space-y-4 text-lg italic">
+                    <div class="p-10 rounded-lg bg-purple-800 text-purple-200">What classes should I use?</div>
+                    <div class="p-10 rounded-lg bg-purple-800 text-purple-200">How do I make things look good?</div>
+                    <div class="p-10 rounded-lg bg-purple-800 text-purple-200">My design looks basic?</div>
+                    <div class="p-10 rounded-lg bg-purple-800 text-purple-200">How do I do responsive?</div>
+                    <div class="p-10 rounded-lg bg-purple-800 text-purple-200">My typography looks bad?</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- about me -->
+    <div class="lg:pt-12 pb-24 bg-gray-300 lg:text-center">
+        <div class="container mx-auto px-6 lg:px-0">
+
+            <h2 class="mb-3 text-3xl lg:text-6xl font-bold text-teal-900">Some stuff about Grant</h2>
+
+            <p class="mb-12 lg:text-xl leading-loose">Hey there! My name is Chris on Code and I founded a web dev tutorial site Scotch.io. We were able to grow to 4M monthly pageviews and $300,000 yearly revenue. Scotch.io was acquired by DigitalOcean in November 2019. Nowadays I'm in search of the best ways to develop and design a business. Hope you enjoy this course and my other one MakeReactApps.com.</p>
+
+            <!-- videos -->
+            <div class="lg:flex lg:space-x-8 space-y-8 lg:space-y-0 text-left">
+                <div class="lg:w-1/2 border-2 border-gray-700 rounded bg-white shadow-xl">
+                    <p class="text-lg p-6 text-gray-700">My favorite band these days is the Motet</p>
+                    <iframe class="w-full rounded-b" height="315" src="https://www.youtube.com/embed/2gQBeKgZdPw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="lg:w-1/2 border-2 border-gray-700 rounded bg-white shadow-xl">
+                    <p class="text-lg p-6 text-gray-700">And synthwave is great for programming.</p>
+                    <iframe class="w-full rounded-b" height="315" src="https://www.youtube.com/embed/jjIOfbuG6wc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
     <!-- what you'll learn -->
+    <div class="py-12 lg:py-24 bg-gray-300 text-gray-700">
+        <div class="container mx-auto px-6 lg:px-0">
+
+            <!-- header -->
+            <div class="relative">
+                <h2 class="mb-16 text-center font-bold text-gray-800 text-3xl lg:text-6xl">What you'll learn in this course</h2>
+                <div class="absolute top-0 left-0 w-1/3 h-2 rounded bg-gradient-to-r from-blue-400 to bg-purple-400 transform -translate-y-4"></div>
+                <div class="absolute bottom-0 right-0 w-1/3 h-2 rounded bg-gradient-to-r from-purple-400 to bg-blue-400 transform translate-y-4"></div>
+            </div>
+
+            <!-- grid area of things -->
+            <div class="lg:grid lg:grid-cols-6 lg:gap-10 space-y-8 lg:space-y-0">
+                <div class="border border-gray-700 rounded col-span-2 shadow-lg">
+                    <div class="flex justify-between items-center p-4 border-b border-gray-700">
+                        <h3 class=" text-lg font-bold">Oat cake caramels jelly-o cake wafer</h3>
+                        <div class="flex space-x-1">
+                            <div class="h-3 w-3 rounded-full bg-red-600"></div>
+                            <div class="h-3 w-3 rounded-full bg-yellow-600"></div>
+                            <div class="h-3 w-3 rounded-full bg-green-600"></div>
+                        </div>
+                    </div>
+                    <p class="p-4">Wafer chocolate jujubes gummies danish chocolate icing cheesecake jujubes. Tart gingerbread halvah bonbon topping cupcake candy soufflé toffee. Pie sesame snaps topping jelly-o pastry donut. Jelly ice cream toffee pie jujubes soufflé muffin.</p>
+                </div>
+                <div class="border border-gray-700 rounded col-span-2 shadow-lg">
+                    <div class="flex justify-between items-center p-4 border-b border-gray-700">
+                        <h3 class=" text-lg font-bold">Oat cake caramels jelly-o cake wafer</h3>
+                        <div class="flex space-x-1">
+                            <div class="h-3 w-3 rounded-full bg-red-600"></div>
+                            <div class="h-3 w-3 rounded-full bg-yellow-600"></div>
+                            <div class="h-3 w-3 rounded-full bg-green-600"></div>
+                        </div>
+                    </div>
+                    <p class="p-4">Oat cake caramels jelly-o cake wafer apple pie chocolate icing sweet roll. Lemon drops candy sweet roll cupcake topping soufflé chupa chups. Gingerbread sesame snaps donut. Ice cream cookie candy canes muffin.</p>
+                </div>
+                <div class="border border-gray-700 rounded col-span-2 shadow-lg">
+                    <div class="flex justify-between items-center p-4 border-b border-gray-700">
+                        <h3 class=" text-lg font-bold">Wafer chocolate jujubes gummies</h3>
+                        <div class="flex space-x-1">
+                            <div class="h-3 w-3 rounded-full bg-red-600"></div>
+                            <div class="h-3 w-3 rounded-full bg-yellow-600"></div>
+                            <div class="h-3 w-3 rounded-full bg-green-600"></div>
+                        </div>
+                    </div>
+                    <p class="p-4">Chocolate cake liquorice dessert cupcake cake tootsie roll jelly-o cake. Ice cream jelly powder. Oat cake tootsie roll gummi bears bonbon topping gummi bears cupcake cheesecake. Lollipop wafer topping danish liquorice tootsie roll pastry.</p>
+                </div>
+                <div class="border border-gray-700 rounded col-span-3 shadow-lg">
+                    <div class="flex justify-between items-center p-4 border-b border-gray-700">
+                        <h3 class=" text-lg font-bold">Candy toffee soufflé soufflé croissant</h3>
+                        <div class="flex space-x-1">
+                            <div class="h-3 w-3 rounded-full bg-red-600"></div>
+                            <div class="h-3 w-3 rounded-full bg-yellow-600"></div>
+                            <div class="h-3 w-3 rounded-full bg-green-600"></div>
+                        </div>
+                    </div>
+                    <p class="p-4">Candy toffee soufflé soufflé croissant liquorice cheesecake gingerbread. Tiramisu oat cake cookie fruitcake chocolate. Oat cake powder icing candy.</p>
+                </div>
+                <div class="border border-gray-700 rounded text-lg col-span-3 shadow-lg">
+                    <div class="flex justify-between items-center p-4 border-b border-gray-700">
+                        <h3 class=" text-lg font-bold">Dessert lemon drops jelly</h3>
+                        <div class="flex space-x-1">
+                            <div class="h-3 w-3 rounded-full bg-red-600"></div>
+                            <div class="h-3 w-3 rounded-full bg-yellow-600"></div>
+                            <div class="h-3 w-3 rounded-full bg-green-600"></div>
+                        </div>
+                    </div>
+                    <p class="p-4">Dessert lemon drops jelly halvah croissant danish cotton candy. Tiramisu apple pie soufflé tootsie roll sesame snaps sesame snaps biscuit candy canes jelly. Lemon drops gummies halvah gummi bears danish jelly beans.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- what we'll build -->
+    <div class="py-12 lg:py-24 bg-gray-400 text-gray-800">
+        <div class="container mx-auto px-6 lg:px-0">
+            <h3 class="text-center text-6xl ">What we'll build in this course</h3>
+            <p class="text-center text-xl mb-10">Gummi bears marshmallow carrot cake croissant gummies ice cream cake apple pie.</p>
+            <div class="grid grid-cols-4 grid-rows-3 gap-4">
+                <div class="flex rounded shadow bg-gray-100">
+                    <div class="bg-red-600 w-1/3 flex items-center justify-center text-3xl rounded-l">😍</div>
+                    <p class="p-4 align-middle">Buttons</p>
+                </div>
+                <div class="flex rounded shadow bg-gray-100">
+                    <div class="bg-blue-600 w-1/3 flex items-center justify-center text-3xl rounded-l">😍</div>
+                    <p class="p-4 align-middle">Forms</p>
+                </div>
+                <div class="flex rounded shadow bg-gray-100">
+                    <div class="bg-green-600 w-1/3 flex items-center justify-center text-3xl rounded-l">😍</div>
+                    <p class="p-4 align-middle">Cards</p>
+                </div>
+                <div class="flex rounded shadow bg-gray-100">
+                    <div class="bg-purple-600 w-1/3 flex items-center justify-center text-3xl rounded-l">😍</div>
+                    <p class="p-4 align-middle">Headers</p>
+                </div>
+                <div class="flex rounded shadow bg-gray-100">
+                    <div class="bg-red-600 w-1/3 flex items-center justify-center text-3xl rounded-l">😍</div>
+                    <p class="p-4 align-middle">Navigation</p>
+                </div>
+                <div class="flex rounded shadow bg-gray-100">
+                    <div class="bg-yellow-600 w-1/3 flex items-center justify-center text-3xl rounded-l">😍</div>
+                    <p class="p-4 align-middle">Header</p>
+                </div>
+                <div class="flex rounded shadow bg-gray-100">
+                    <div class="bg-green-600 w-1/3 flex items-center justify-center text-3xl rounded-l">😍</div>
+                    <p class="p-4 align-middle">Parceljs</p>
+                </div>
+                <div class="flex rounded shadow bg-gray-100">
+                    <div class="bg-red-600 w-1/3 flex items-center justify-center text-3xl rounded-l">😍</div>
+                    <p class="p-4 align-middle">Navigation</p>
+                </div>
+                <div class="flex rounded shadow bg-gray-100">
+                    <div class="bg-purple-600 w-1/3 flex items-center justify-center text-3xl rounded-l">😍</div>
+                    <p class="p-4 align-middle">Newsletter</p>
+                </div>
+                <div class="flex rounded shadow bg-gray-100">
+                    <div class="bg-red-600 w-1/3 flex items-center justify-center text-3xl rounded-l">😍</div>
+                    <p class="p-4 align-middle">FAQ</p>
+                </div>
+                <div class="flex rounded shadow bg-gray-100">
+                    <div class="bg-blue-600 w-1/3 flex items-center justify-center text-3xl rounded-l">😍</div>
+                    <p class="p-4 align-middle">pricing</p>
+                </div>
+                <div class="flex rounded shadow bg-gray-100">
+                    <div class="bg-yellow-600 w-1/3 flex items-center justify-center text-3xl rounded-l">😍</div>
+                    <p class="p-4 align-middle">Grids</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- pricing -->
+    <div class="relative bg-blue-600 py-32 text-blue-200">
+
+        <!-- graybox for the top section-->
+        <div class="absolute top-0 inset-x-0 bg-gray-400 h-48"></div>
+
+        <div class="container mx-auto px-6 lg:px-0 flex items-center space-x-8">
+            <!-- left box -->
+            <div class="w-1/3 pt-12 text-center space-y-2 text-xl">
+                <p><strong class="font-bold text-white">75 videos</strong> at a smooth pace</p>
+                <p><strong class="font-bold text-white">9.25 hours</strong> of learning + building</p>
+                <p><strong class="font-bold text-white">Source code</strong> and CodePens</p>
+            </div>
+            <!-- pricing -->
+            <div class="relative w-1/3 pt-12 text-center bg-white border-8 border-purple-700 rounded shadow text-gray-700 space-y-4 p-6 transform hover:scale-105 duration-300">
+
+                <!-- cool colored beams -->
+                <div class="absolute top-0 inset-x-0 transform -translate-y-full flex items-end justify-center space-x-8">
+                    <div class="h-16 w-2 mb-8 bg-red-600 rounded transform origin-bottom -rotate-45"></div>
+                    <div class="h-24 w-2 mb-8 bg-yellow-600 rounded"></div>
+                    <div class="h-16 w-2 mb-8 bg-green-600 rounded transform origin-bottom rotate-45"></div>
+                </div>
+
+                <h4 class="text-sm text-gray-600">Start Tailwind<span class="italic"> -ing</span>! </h4>
+                <div class="text-6xl text-purple-800 font-bold"><span class="opacity-50">$</span>47</div>
+                <a class="block py-3 px-6 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded text-yellow-800 hover:text-yellow-900 shadow">Buy the Course</a>
+            </div>
+            <!-- right box -->
+            <div class="w-1/3 pt-12 text-center space-y-2 text-xl">
+                <p>Use the code in <strong class="font-bold text-white">your projects</strong></p>
+                <p>Access to <strong class="font-bold text-white">Discord</strong> for support</p>
+                <p><strong class="font-bold text-white">Lifetime</strong> refund guarantee</p>
+            </div>
+        </div>
+    </div>
+
     <!-- faq -->
     <!-- footer/newsletter -->
 
